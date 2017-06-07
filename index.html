@@ -17,12 +17,28 @@
 
     <link rel="stylesheet" href="assets\stylesheets\_bootstrap.scss">
     <script src="assets\javascripts\bootstrap.min.js"></script>
+
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
 </head>
 
 
 
 
 <body>
+  <div style="display: none;">
+    <div class="box-modal" id="modal">
+      <div class="modalBlock">
+        <div class="box-modal_close arcticmodal-close"></div>
+        <p class="box-modal_article"><span class="box-modal_article-span">Заказать звонок</span><br> Оставьте заявку с вашим номером телефона и мы свяжемся с Вами в ближайшее время.</p>
+        <form action="" class="box-modal_form">
+          <input type="text" name="clientName" id="clientName" placeholder="Введите имя*" required="true">
+          <input type="tel" name="clientPhone" id="clientPhone" placeholder="Введите номер телефона*" required="true">
+          <input type="submit" class="btn">
+        </form>
+        </div>
+    </div>
+</div>
     <header>
 
         <!--Шапка сайта-->
@@ -155,7 +171,7 @@
 
             <p>мы предлагаем не просто сайты,<br>мы предлагаем готовые решения для бизнеса</p>
 
-            <div class="main-btn btn">
+            <div class="main-btn btn" id="request">
                 <a href="">оставить заявку</a>
             </div>
 
@@ -558,7 +574,7 @@
     <script src="js/works.js"></script>
     <script src="js/close_menu.js"></script>
     <script src="js/scroll.js"></script>
-
+    <script src="js/arcticmodal.js"></script>
 
     <!--Slider script-->
   <!--  <script src="js/slider.js"></script> -->
